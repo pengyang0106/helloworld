@@ -1,0 +1,22 @@
+import random
+attempts=1
+secret=random.randint(1,100)
+print('=======Start Game=======')
+a_input = int(input("Guess the number:"))
+
+while a_input!=secret:
+    print ('you are wrong')
+    if a_input < secret:
+        print ('guess is low')
+        a_input = int(input("Guess the number again:"))
+    elif a_input > secret:
+        print ('guess is high')
+        a_input = int(input("Guess the number again:"))
+    attempts +=1
+    if attempts == 6:
+        print('you failed for',attempts,'times')
+        break
+else:
+    print ('you got it',secret)
+        
+    print('Game is done')
