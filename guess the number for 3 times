@@ -17,6 +17,7 @@ while a_input!=secret:
         print('you failed for',attempts,'times')
         break
 else:
-    print ('you got it',secret)
+    print ('you got it the number was',secret)
         
     print('Game is done')
+
