@@ -1,0 +1,14 @@
+sourcewords = []
+fullwords =[]
+with open ("source.txt") as file:
+    for line in file:
+        line=line.strip()
+        sourcewords.append(line)
+#print (sourcewords)
+with open ("full.txt") as file:
+    for line in file:
+        line=line.strip()
+        fullwords.append(line)
+#print (fullwords)
+resA =[i for i in sourcewords if i in fullwords]
+print (resA)
