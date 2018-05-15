@@ -13,4 +13,4 @@ def factorial(n):
 
 number = int(input("enter the number:"))
 result = factorial(number)
-print("%d 的阶乘是：%d" %(number,result))
+print("%d factorial is：%d" %(number,result))
